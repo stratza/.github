@@ -27,11 +27,11 @@
 
 <br/><br/>
 
-<a href="https://github.com/Di3Z1E/spindlex/stargazers"><img src="https://img.shields.io/github/stars/Di3Z1E/spindlex?style=for-the-badge&labelColor=161B22&color=58A6FF&logo=github&label=SpindleX+Stars" /></a>
-<a href="https://github.com/Di3Z1E/spindlex/commits"><img src="https://img.shields.io/github/commit-activity/m/Di3Z1E/spindlex?style=for-the-badge&labelColor=161B22&color=3FB950&label=Monthly+Commits" /></a>
-<a href="https://github.com/Di3Z1E/spindlex/issues"><img src="https://img.shields.io/github/issues/Di3Z1E/spindlex?style=for-the-badge&labelColor=161B22&color=F78166&label=Open+Issues" /></a>
-<a href="https://github.com/Di3Z1E/spindlex/pulls"><img src="https://img.shields.io/github/issues-pr/Di3Z1E/spindlex?style=for-the-badge&labelColor=161B22&color=D2A8FF&label=Open+PRs" /></a>
-<a href="https://github.com/Di3Z1E/spindlex/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Di3Z1E/spindlex?style=for-the-badge&labelColor=161B22&color=8957E5" /></a>
+<a href="https://github.com/Di3Z1E/spindlex/stargazers"><img src="https://img.shields.io/github/stars/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=58A6FF&logo=github&label=SpindleX+Stars" /></a>
+<a href="https://github.com/Di3Z1E/spindlex/commits"><img src="https://img.shields.io/github/commit-activity/m/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=3FB950&label=Monthly+Commits" /></a>
+<a href="https://github.com/Di3Z1E/spindlex/issues"><img src="https://img.shields.io/github/issues/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=F78166&label=Open+Issues" /></a>
+<a href="https://github.com/Di3Z1E/spindlex/pulls"><img src="https://img.shields.io/github/issues-pr/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=D2A8FF&label=Open+PRs" /></a>
+<a href="https://github.com/Di3Z1E/spindlex/blob/main/LICENSE"><img src="https://img.shields.io/github/license/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=8957E5" /></a>
 
 </div>
 
