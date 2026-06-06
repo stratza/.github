@@ -27,11 +27,11 @@
 
 <br/><br/>
 
-<a href="https://github.com/Di3Z1E/spindlex/stargazers"><img src="https://img.shields.io/github/stars/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=58A6FF&logo=github&label=SpindleX+Stars" /></a>
-<a href="https://github.com/Di3Z1E/spindlex/commits"><img src="https://img.shields.io/github/commit-activity/m/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=3FB950&label=Monthly+Commits" /></a>
-<a href="https://github.com/Di3Z1E/spindlex/issues"><img src="https://img.shields.io/github/issues/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=F78166&label=Open+Issues" /></a>
-<a href="https://github.com/Di3Z1E/spindlex/pulls"><img src="https://img.shields.io/github/issues-pr/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=D2A8FF&label=Open+PRs" /></a>
-<a href="https://github.com/Di3Z1E/spindlex/blob/main/LICENSE"><img src="https://img.shields.io/github/license/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=8957E5" /></a>
+<a href="https://github.com/stratza/spindlex/stargazers"><img src="https://img.shields.io/github/stars/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=58A6FF&logo=github&label=SpindleX+Stars" /></a>
+<a href="https://github.com/stratza/spindlex/commits"><img src="https://img.shields.io/github/commit-activity/m/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=3FB950&label=Monthly+Commits" /></a>
+<a href="https://github.com/stratza/spindlex/issues"><img src="https://img.shields.io/github/issues/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=F78166&label=Open+Issues" /></a>
+<a href="https://github.com/stratza/spindlex/pulls"><img src="https://img.shields.io/github/issues-pr/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=D2A8FF&label=Open+PRs" /></a>
+<a href="https://github.com/stratza/spindlex/blob/main/LICENSE"><img src="https://img.shields.io/github/license/stratza/spindlex?style=for-the-badge&labelColor=161B22&color=8957E5" /></a>
 
 </div>
 
@@ -67,19 +67,21 @@
 <tr>
 <td width="55%">
 
-### ⚡ [SpindleX](https://github.com/Di3Z1E/spindlex)
+### ⚡ [SpindleX](https://github.com/stratza/spindlex)
 
-**Async-first SSH stack - built to replace legacy Python SSH tooling**
+**Modern SSH and SFTP for Python automation**
 
-A pure-Python SSH library designed for the modern developer. `asyncio` at its core - not bolted on afterward. Ed25519 only. Modern ciphers only. No SSHv1 ghosts in the codebase.
+A typed Python SSHv2 and SFTP library for async automation, secure file transfer, port forwarding, and controlled SSH/SFTP server workflows. Modern algorithms, strict host key verification, and clear production-facing docs are part of the design.
 
 ```python
-async with SpindleX(
-    host="prod-01",
-    key=Ed25519Key.from_file("~/.ssh/id_ed25519")
-) as ssh:
-    result = await ssh.run("systemctl status api")
-    # non-blocking. concurrent. secure by default.
+from spindlex import SSHClient
+
+with SSHClient() as client:
+    client.get_host_keys().load()
+    client.connect("prod-01", username="ops")
+
+    stdin, stdout, stderr = client.exec_command("systemctl status api")
+    print(stdout.read().decode().strip())
 ```
 
 </td>
@@ -89,18 +91,18 @@ async with SpindleX(
 
 | | |
 |---|---|
-| **Architecture** | `asyncio`-native from day one |
-| **Security** | Ed25519 + modern ciphers only |
-| **Performance** | Streamlined connection lifecycle |
-| **API** | Clean, explicit, developer-first |
-| **Philosophy** | Zero legacy shims - ever |
+| **Architecture** | Sync and `asyncio` client APIs |
+| **Security** | Strict host key verification by default |
+| **Performance** | Pipelined SFTP and modern ciphers |
+| **API** | Typed, explicit, developer-first |
+| **Docs** | Production, compatibility, and security guides |
 
 <br/>
 
 <div align="center">
-<a href="https://github.com/Di3Z1E/spindlex"><img src="https://img.shields.io/badge/View%20SpindleX-58A6FF?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/stratza/spindlex"><img src="https://img.shields.io/badge/View%20SpindleX-58A6FF?style=for-the-badge&logo=github&logoColor=white" /></a>
 &nbsp;
-<a href="https://github.com/Di3Z1E/spindlex/stargazers"><img src="https://img.shields.io/badge/Star%20It-F0C040?style=for-the-badge&logo=github&logoColor=black" /></a>
+<a href="https://github.com/stratza/spindlex/stargazers"><img src="https://img.shields.io/badge/Star%20It-F0C040?style=for-the-badge&logo=github&logoColor=black" /></a>
 </div>
 
 </td>
@@ -362,11 +364,11 @@ We ship with intent. Before contributing:
 
 <br/>
 
-<a href="https://github.com/Di3Z1E/spindlex/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contribute%20to%20SpindleX-3FB950?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/stratza/spindlex/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contribute%20to%20SpindleX-3FB950?style=for-the-badge&logo=github&logoColor=white" /></a>
 &nbsp;
-<a href="https://github.com/Di3Z1E/spindlex/issues/new"><img src="https://img.shields.io/badge/Open%20an%20Issue-F78166?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/stratza/spindlex/issues/new"><img src="https://img.shields.io/badge/Open%20an%20Issue-F78166?style=for-the-badge&logo=github&logoColor=white" /></a>
 &nbsp;
-<a href="https://github.com/Di3Z1E/spindlex/discussions"><img src="https://img.shields.io/badge/Discussions-58A6FF?style=for-the-badge&logo=github&logoColor=white" /></a>
+<a href="https://github.com/stratza/spindlex/discussions"><img src="https://img.shields.io/badge/Discussions-58A6FF?style=for-the-badge&logo=github&logoColor=white" /></a>
 
 </div>
 
