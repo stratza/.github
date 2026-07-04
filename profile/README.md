@@ -111,6 +111,48 @@ with SSHClient() as client:
 
 <br/>
 
+<table>
+<tr>
+<td width="55%">
+
+### ⚡ [TifEra](https://github.com/stratza/tiferea)
+
+**In-Cluster Kubernetes Operations Console**
+
+A browser-based, terminal-first operations console that runs *inside* the Kubernetes cluster. One-click shells, file browser, live logs, metrics, and topology — all through the pod’s ServiceAccount. No agents, no kubeconfig, no client-side credentials.
+
+```sh
+kubectl apply -f https://github.com/stratza/tiferea/releases/latest/download/tifera-0.1.1.yaml
+kubectl -n tifera port-forward svc/tifera 8080:80
+```
+
+</td>
+<td width="45%" valign="top">
+
+<br/>
+
+| | |
+|---|---|
+| **Architecture** | In-cluster only • ServiceAccount-driven |
+| **Security** | Network reachability = access • Hardened pod |
+| **Core Features** | PTY shells, file ops, live logs, metrics, topology |
+| **Multi-operator** | Shared sessions, presence, action logging |
+| **Design** | Zero client dependencies • Vanilla frontend |
+
+<br/>
+
+<div align="center">
+<a href="https://github.com/stratza/tiferea"><img src="https://img.shields.io/badge/View%20TifEra-58A6FF?style=for-the-badge&logo=github&logoColor=white" /></a>
+&nbsp;
+<a href="https://github.com/stratza/tiferea/stargazers"><img src="https://img.shields.io/badge/Star%20It-F0C040?style=for-the-badge&logo=github&logoColor=black" /></a>
+</div>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
 ---
 
 <br/>
